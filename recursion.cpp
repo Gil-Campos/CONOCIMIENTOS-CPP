@@ -127,7 +127,3 @@ string impar(int num) {
     } 
 }
 
-
-
-
-
