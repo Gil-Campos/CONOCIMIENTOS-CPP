@@ -44,19 +44,19 @@ void driver()
     }
     cout << endl;
 
-    insertarDatos(&vector01, &vector02);
+    //insertarDatos(&vector01, &vector02);
 
     //Recorrer - acceder a los elementos
     cout << endl;
-    mostrarDatos(&vector01, &vector02);
+    //mostrarDatos(&vector01, &vector02);
 
     eleminarVaciarDatos(&vector01, &vector02);
 
     //Recorrer - mostrando cambio de los elementos
     cout << "-Mostrar cambios de vectores:" << endl;
-    mostrarDatos(&vector01, &vector02);
+    //mostrarDatos(&vector01, &vector02);
 
-    consultarEncoger(&vector01, &vector02);
+    //consultarEncoger(&vector01, &vector02);
 }
 
 void mostrarDatos(vector<int> *vect01, vector<float> *vect02)
