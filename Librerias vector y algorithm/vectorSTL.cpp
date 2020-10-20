@@ -47,7 +47,6 @@ void driver()
     //insertarDatos(&vector01, &vector02);
 
     //Recorrer - acceder a los elementos
-    cout << endl;
     //mostrarDatos(&vector01, &vector02);
 
     eleminarVaciarDatos(&vector01, &vector02);
@@ -140,7 +139,6 @@ void consultarEncoger(vector<int> *vect01, vector<float> *vect02)
     }
     cout << endl;
 
-    cout << endl;
     cout << "Encogiendo... ";
     (*vect02).shrink_to_fit();
     cout << "size vector 02: " << (*vect02).size() << " cap: " << (*vect02).capacity() << endl;
