@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+/*
+-Function overloading:
+When there are multiple functions with the same name but different parameters then these functions are
+said to be overloaded. Functions can be overloaded by change in number of arguments or and change in type
+of arguments.
+*/
+
+class Geeks
+{
+    public:
+
+    //function with 1 parameter
+    void func(int x)
+    {
+        cout << "Value of x is " <<  x << endl;
+    }
+
+    //function with the same name but 1 double parameter
+    void func(double x)
+    {
+        cout << "Value of x is " << x << endl;
+    }
+
+    //function with the same and 2 int parameters
+    void func(int x, int y)
+    {
+        cout << "Value of x and y is " << x << ", " << y << endl;
+    }
+};
+
+int main()
+{
+    Geeks obj1;
+
+    //Which function is called will depend on the parameters passed 
+    
+    //The first 'func' is called
+    obj1.func(7);
+
+    //The second func is called
+    obj1.func(9.132);
+
+    //The third 'func' is called
+    obj1.func(85, 64);
+    
+    return 0;
+}
