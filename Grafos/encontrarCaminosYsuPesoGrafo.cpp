@@ -16,6 +16,7 @@ struct Data
     int peso;
 };
 
+int counter = 0;
 int V = 0; //Numero de vertices
 list<Data>* adj; //Puntero al arreglo de la lista de adyacencia
 
@@ -88,7 +89,10 @@ void imprimirTodosLosCaminosUtil(int u, int d, bool visited[], int path[], int& 
         for (int i = 0; i < path_index; i++)
         {
             cout << path[i] << " ";
+            counter += adj[path[i]].back().peso;
         }
+        cout << ", peso del arbol: " << counter << endl;
+        counter = 0;
         cout << endl;
     } 
     else //Si el actual vertice no es el destino 
