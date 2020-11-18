@@ -95,12 +95,12 @@ void imprimirTodosLosCaminosUtil(int u, int d, bool visited[], int path[], int& 
         counter = 0;
         cout << endl;
 
-        for (int i = 0; i < path_index; i++)
-        {
-            //cout << "|" << path[i] << "|" << endl;
-            cout << "{"<< path[i] << ", " << adj[path[i]].front().fin << ", "<< adj[path[i]].front().peso << "}" << " ";
-        }
-        cout << endl;
+        // for (int i = 0; i < path_index; i++)
+        // {
+        //     //cout << "|" << path[i] << "|" << endl;
+        //     cout << "{"<< path[i] << ", " << adj[path[i]].front().fin << ", "<< adj[path[i]].front().peso << "}" << " ";
+        // }
+        // cout << endl;
         
     } 
     else //Si el actual vertice no es el destino 
